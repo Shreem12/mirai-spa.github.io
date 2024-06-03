@@ -1,0 +1,31 @@
+/* styles.css */
+#floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.whatsapp-btn, .call-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366; /* WhatsApp green color */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn img, .call-btn img {
+    width: 100%;
+    height: auto;
+}
+
+.call-btn {
+    background-color: #007bff; /* Call button color */
+}
+
+.whatsapp-btn:hover, .call-btn:hover {
+    transform: scale(1.1);
+}
